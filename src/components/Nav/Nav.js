@@ -128,7 +128,11 @@ const Nav = ({ section, setSection, setTheme }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="stack-overflow-icon" src={StackOverflow} />
+                <img
+                  className="stack-overflow-icon"
+                  src={StackOverflow}
+                  alt="Stack Overflow Icon"
+                />
               </a>
             </div>
             <div className="menu-footer-copyright">Nick Buikema ©2020</div>
