@@ -31,17 +31,13 @@ const App = () => {
     }
   };
 
-  const handleNavClick = ({ key }) => {
-    setSection(key);
-  };
-
   const handleProjectClick = (projectId) => {
     setProject(projectId);
   };
 
   return (
     <Layout style={{ height: '100vh' }}>
-      <Nav handleClick={handleNavClick} section={section} />
+      <Nav section={section} setSection={setSection} />
       <Body section={showSection(section)} />
       <ProjectModal project={project} setProject={setProject} />
     </Layout>

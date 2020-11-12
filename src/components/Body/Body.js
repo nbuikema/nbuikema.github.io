@@ -9,7 +9,7 @@ const { Content } = Layout;
 const Skills = ({ section }) => {
   return (
     <Layout>
-      <Content>
+      <Content id="body">
         {section}
 
         <div id="background"></div>

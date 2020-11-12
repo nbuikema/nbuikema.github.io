@@ -49,11 +49,24 @@
 }
 
 .ant-layout-sider {
-  width: 25vw !important;
-  min-width: 25vw !important;
-  max-width: 25vw !important;
+  width: 378px !important;
+  min-width: 378px !important;
+  max-width: 378px !important;
+  height: 100% !important;
   background: #222629 !important;
   z-index: 4;
+}
+
+#nav {
+  height: 100%;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  transition: left 0.8s;
+}
+
+.hide-nav {
+  left: -378px !important;
 }
 
 .menu-footer {
@@ -70,8 +83,6 @@
 }
 
 .footer-icons {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 40px;
 }
 
@@ -81,7 +92,91 @@
   color: inherit;
 }
 
+.stack-overflow-icon {
+  width: 38px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(146deg)
+    brightness(100%) contrast(104%);
+}
+
 .footer-icon:hover {
   opacity: 1;
   color: inherit;
+}
+
+.btn-nav {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 378px;
+  transition: left 0.8s;
+}
+
+.btn-nav-push {
+  left: 0;
+}
+
+.ant-btn-icon-only.ant-btn-lg > * {
+  font-size: 30px !important;
+  margin-top: -2px !important;
+}
+
+.ant-btn:hover,
+.ant-btn:focus {
+  border: none !important;
+  color: inherit !important;
+}
+
+@media (max-width: 767px) {
+  .ant-layout-sider {
+    width: 220px !important;
+    min-width: 220px !important;
+    max-width: 220px !important;
+  }
+
+  .ant-menu {
+    margin-top: 5rem !important;
+  }
+
+  .menu-title {
+    font-size: 2.7rem;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .Typewriter {
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+
+  .btn-nav {
+    left: 220px;
+  }
+
+  .btn-nav-push {
+    left: 0;
+  }
+
+  .ant-menu-item {
+    height: 50px !important;
+    padding-top: 4px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
+  .menu-footer {
+    padding: 20px 25px !important;
+  }
+
+  .footer-icons {
+    margin-bottom: 10px;
+  }
+
+  .footer-icon {
+    font-size: 1.8rem;
+    opacity: 0.65;
+    color: inherit;
+  }
+
+  .stack-overflow-icon {
+    width: 28px;
+  }
 }
