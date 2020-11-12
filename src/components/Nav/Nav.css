@@ -1,0 +1,87 @@
+.ant-menu {
+  margin-top: 7rem !important;
+}
+
+.ant-menu.ant-menu-dark {
+  background: #222629 !important;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+  background-color: #0f0f0f !important;
+}
+
+.ant-menu-item {
+  height: 70px !important;
+  padding-top: 16px !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.menu-title {
+  font-size: 3rem;
+  color: #fff;
+  text-align: right;
+  padding: 40px 40px 0px 40px;
+  margin-bottom: 0;
+}
+
+.menu-text {
+  font-size: 1.4rem;
+  float: right;
+}
+
+.ant-menu-item .anticon {
+  font-size: 1.4rem !important;
+  margin-top: 10px;
+}
+
+.typewriter-container {
+  margin-top: 50px;
+}
+
+.Typewriter {
+  font-size: 1.4rem;
+  float: right;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 0 40px;
+}
+
+.ant-layout-sider {
+  width: 25vw !important;
+  min-width: 25vw !important;
+  max-width: 25vw !important;
+  background: #222629 !important;
+  z-index: 4;
+}
+
+.menu-footer {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: inherit !important;
+  color: #fff !important;
+}
+
+.menu-footer-copyright {
+  opacity: 0.45;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-icon {
+  font-size: 2.4rem;
+  opacity: 0.65;
+  color: inherit;
+}
+
+.footer-icon:hover {
+  opacity: 1;
+  color: inherit;
+}

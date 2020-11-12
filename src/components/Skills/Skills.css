@@ -1,0 +1,16 @@
+h4 {
+  color: #fff !important;
+  font-size: 2.7rem;
+}
+
+.list-group {
+  justify-content: center;
+}
+
+.list-group-item {
+  margin-bottom: 4px;
+  margin-right: 4px;
+  border-radius: 0.25rem !important;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 10px;
+}

@@ -1,0 +1,18 @@
+.ant-col {
+  margin-bottom: 50px;
+}
+
+.ant-card-cover {
+  padding: 4px;
+  object-fit: cover;
+}
+
+.ant-card-meta-title,
+.ant-card-meta-description {
+  font-size: 1.3rem !important;
+  color: #000 !important;
+}
+
+.ant-card-meta-title {
+  font-weight: bold !important;
+}

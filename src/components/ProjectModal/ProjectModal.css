@@ -1,0 +1,23 @@
+.carousel-image {
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.text-dark {
+  color: #000 !important;
+}
+
+p.text-dark {
+  font-size: 1.15rem;
+}
+
+.ant-modal-title {
+  font-size: 1.6rem !important;
+}
+
+.carousel-indicators li {
+  height: 5px;
+}

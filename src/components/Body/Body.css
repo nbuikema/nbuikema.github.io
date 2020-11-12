@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+.ant-layout-content {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 4rem;
+}
+
+.content {
+  position: relative;
+  z-index: 4;
+}
+
+h2 {
+  color: #fff !important;
+}
+
+#background {
+  background: url('../../images/background/background.png') repeat 5% 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  opacity: 96%;
+
+  animation-name: animateStars;
+  animation-duration: 200s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#midground {
+  background: url('../../images/background/midground.png') repeat 20% 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  opacity: 96%;
+
+  animation-name: animateStars;
+  animation-duration: 150s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#foreground {
+  background: url('../../images/background/foreground.png') repeat 35% 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  opacity: 96%;
+
+  animation-name: animateStars;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animateStars {
+  from {
+    background-position: 5% 5%;
+  }
+  to {
+    background-position: 1300% 600%;
+  }
+}
