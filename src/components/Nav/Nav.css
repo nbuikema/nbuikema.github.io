@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
 .ant-menu {
   margin-top: 7rem !important;
 }
@@ -54,7 +56,7 @@
   max-width: 378px !important;
   height: 100% !important;
   background: #222629 !important;
-  z-index: 4;
+  z-index: 5;
 }
 
 #nav {
@@ -104,7 +106,7 @@
 }
 
 .btn-nav {
-  z-index: 5;
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 378px;
@@ -120,10 +122,48 @@
   margin-top: -2px !important;
 }
 
-.ant-btn:hover,
+.ant-btn,
 .ant-btn:focus {
+  background: #fff !important;
+  color: #000 !important;
   border: none !important;
-  color: inherit !important;
+}
+
+.ant-btn:hover {
+  background: #000 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.fun-mode {
+  position: absolute;
+  bottom: 180px;
+  left: 148px;
+  z-index: 5;
+  transition: left 0.8s;
+}
+
+.fun-mode .text-white {
+  font-family: 'Reenie Beanie', cursive;
+  opacity: 0.75;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.ant-switch {
+  margin-top: 5px !important;
+}
+
+.ant-switch-checked {
+  background: #fff !important;
+}
+
+.ant-switch-checked .ant-switch-inner {
+  color: #000 !important;
+}
+
+.ant-switch-checked .ant-switch-handle::before {
+  background: #000 !important;
 }
 
 @media (max-width: 767px) {
@@ -144,7 +184,8 @@
 
   .Typewriter {
     font-size: 1.2rem;
-    padding: 0 20px;
+    padding: 0;
+    padding-right: 8px;
   }
 
   .btn-nav {
@@ -178,5 +219,10 @@
 
   .stack-overflow-icon {
     width: 28px;
+  }
+
+  .fun-mode {
+    left: 72px;
+    bottom: 120px;
   }
 }

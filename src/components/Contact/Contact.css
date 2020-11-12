@@ -1,7 +1,6 @@
 .ant-form {
   background: rgba(255, 255, 255, 0.65);
   border-radius: 10px;
-  padding: 1.2rem 2rem !important;
 }
 
 .anticon svg {
@@ -9,5 +8,28 @@
 }
 
 .ant-input-prefix {
+  font-size: 20px;
   margin-top: 6px;
+  margin-right: 8px !important;
+}
+
+.ant-btn.submit-button {
+  background: rgba(0, 0, 0, 0.85) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.ant-btn.submit-button:hover,
+.ant-btn.submit-button:focus {
+  background: rgba(255, 255, 255, 0.85) !important;
+  color: #000 !important;
+  border: none !important;
+}
+
+.button-text {
+  font-size: 18px;
+}
+
+.ant-input {
+  font-size: 20px !important;
 }

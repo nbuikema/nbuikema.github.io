@@ -16,3 +16,17 @@
 .ant-card-meta-title {
   font-weight: bold !important;
 }
+
+.ant-card-actions .anticon {
+  font-size: 28px !important;
+}
+
+.ant-card-actions a {
+  font-size: 22px !important;
+  color: #000 !important;
+}
+
+.ant-card-body {
+  flex-grow: 1;
+  padding: 10px !important;
+}

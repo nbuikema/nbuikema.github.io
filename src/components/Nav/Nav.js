@@ -5,7 +5,7 @@ import StackOverflow from '../../images/stack-overflow.svg';
 
 import './Nav.css';
 
-import { Menu, Layout, Button } from 'antd';
+import { Menu, Layout, Button, Tooltip, Switch } from 'antd';
 import {
   CameraFilled,
   AppstoreFilled,
@@ -14,36 +14,58 @@ import {
   GithubFilled,
   LinkedinFilled,
   CaretRightFilled,
-  CaretLeftFilled
+  CaretLeftFilled,
+  EnterOutlined
 } from '@ant-design/icons';
 const { Item } = Menu;
 const { Sider, Footer } = Layout;
 
-const Nav = ({ section, setSection }) => {
+const Nav = ({ section, setSection, setTheme }) => {
   const [showNav, setShowNav] = useState(true);
 
   const handleNavClick = ({ key }) => {
     setSection(key);
+
+    const nav = document.getElementById('nav');
+    const body = document.getElementById('body');
+    const navBtn = document.getElementById('btn-nav');
+    const funMode = document.getElementById('fun-mode');
+
+    if (window.innerWidth < 1025) {
+      body.classList.add('push-body');
+      nav.classList.add('hide-nav');
+      navBtn.classList.add('btn-nav-push');
+      funMode.classList.add('hide-nav');
+
+      setShowNav(false);
+    }
   };
 
   const handleNavToggle = () => {
     const nav = document.getElementById('nav');
     const body = document.getElementById('body');
     const navBtn = document.getElementById('btn-nav');
+    const funMode = document.getElementById('fun-mode');
 
     if (nav.classList.contains('hide-nav')) {
       body.classList.remove('push-body');
       nav.classList.remove('hide-nav');
       navBtn.classList.remove('btn-nav-push');
+      funMode.classList.remove('hide-nav');
 
       setShowNav(true);
     } else {
       body.classList.add('push-body');
       nav.classList.add('hide-nav');
       navBtn.classList.add('btn-nav-push');
+      funMode.classList.add('hide-nav');
 
       setShowNav(false);
     }
+  };
+
+  const handleThemeChange = (value) => {
+    value === true ? setTheme('fun') : setTheme('default');
   };
 
   return (
@@ -53,7 +75,12 @@ const Nav = ({ section, setSection }) => {
           <h1 className="menu-title">Nick Buikema</h1>
           <Typewriter
             options={{
-              strings: ['Web Developer', 'Innovator', 'Software Engineer'],
+              strings: [
+                'Web Developer',
+                'Mobile App Developer',
+                'Creator',
+                'Innovator'
+              ],
               autoStart: true,
               loop: true
             }}
@@ -109,11 +136,42 @@ const Nav = ({ section, setSection }) => {
         </Sider>
       </div>
       <div id="btn-nav" className="btn-nav mt-2 ml-2 p-0">
+        <Tooltip
+          className="d-none d-md-block"
+          title={`Toggle Nav ${showNav ? 'OFF' : 'ON'}`}
+        >
+          <Button
+            shape="circle"
+            icon={showNav ? <CaretLeftFilled /> : <CaretRightFilled />}
+            size="large"
+            onClick={handleNavToggle}
+          />
+        </Tooltip>
         <Button
+          className="d-block d-md-none"
           shape="circle"
           icon={showNav ? <CaretLeftFilled /> : <CaretRightFilled />}
           size="large"
           onClick={handleNavToggle}
+        />
+      </div>
+      <div id="fun-mode" className="fun-mode text-center">
+        <div className="text-white">
+          PSSSST!
+          <br />
+          TURN ON
+          <br />
+          FUN MODE!
+          <br />
+          <span className="float-right">
+            <EnterOutlined />
+          </span>
+        </div>
+        <Switch
+          checkedChildren="ON"
+          unCheckedChildren="OFF"
+          defaultChecked={false}
+          onChange={handleThemeChange}
         />
       </div>
     </>

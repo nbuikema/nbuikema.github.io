@@ -3,15 +3,15 @@
 }
 
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .text-dark {
   color: #000 !important;
 }
 
-p.text-dark {
-  font-size: 1.15rem;
+p.text-white {
+  font-size: 1.25rem;
 }
 
 .ant-modal-title {
@@ -20,4 +20,8 @@ p.text-dark {
 
 .carousel-indicators li {
   height: 5px;
+}
+
+.ant-modal-wrap {
+  background: rgba(0, 0, 0, 0.75) !important;
 }

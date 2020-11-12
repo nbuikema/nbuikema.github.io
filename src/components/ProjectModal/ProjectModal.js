@@ -2,7 +2,8 @@ import React from 'react';
 
 import { Modal, Carousel } from 'antd';
 
-import CindysCreations from './CindysCreations';
+import CindysCreations from '../project-components/CindysCreations';
+import NJAHProperties from '../project-components/NJAHProperties';
 
 import './ProjectModal.css';
 
@@ -15,8 +16,10 @@ const ProjectModal = ({ project, setProject }) => {
       footer={null}
       centered
       width={1200}
+      mask={false}
     >
-      <CindysCreations />
+      {project === "Cindy's Creations" && <CindysCreations />}
+      {project === 'NJAH Properties' && <NJAHProperties />}
     </Modal>
   );
 };

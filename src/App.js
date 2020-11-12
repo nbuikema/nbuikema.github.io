@@ -15,11 +15,12 @@ import { Layout } from 'antd';
 const App = () => {
   const [section, setSection] = useState('about');
   const [project, setProject] = useState('');
+  const [theme, setTheme] = useState('default');
 
   const showSection = (section) => {
     switch (section) {
       case 'about':
-        return <About />;
+        return <About setSection={setSection} />;
       case 'projects':
         return <Projects handleProjectClick={handleProjectClick} />;
       case 'skills':
@@ -37,8 +38,8 @@ const App = () => {
 
   return (
     <Layout style={{ height: '100vh' }}>
-      <Nav section={section} setSection={setSection} />
-      <Body section={showSection(section)} />
+      <Nav section={section} setSection={setSection} setTheme={setTheme} />
+      <Body section={showSection(section)} theme={theme} />
       <ProjectModal project={project} setProject={setProject} />
     </Layout>
   );
