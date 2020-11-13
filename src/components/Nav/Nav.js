@@ -140,10 +140,7 @@ const Nav = ({ section, setSection, setTheme }) => {
         </Sider>
       </div>
       <div id="btn-nav" className="btn-nav mt-2 ml-2 p-0">
-        <Tooltip
-          className="d-none d-md-block"
-          title={`Toggle Nav ${showNav ? 'OFF' : 'ON'}`}
-        >
+        <Tooltip title={`Toggle Nav ${showNav ? 'OFF' : 'ON'}`}>
           <Button
             shape="circle"
             icon={showNav ? <CaretLeftFilled /> : <CaretRightFilled />}
@@ -151,13 +148,6 @@ const Nav = ({ section, setSection, setTheme }) => {
             onClick={handleNavToggle}
           />
         </Tooltip>
-        <Button
-          className="d-block d-md-none"
-          shape="circle"
-          icon={showNav ? <CaretLeftFilled /> : <CaretRightFilled />}
-          size="large"
-          onClick={handleNavToggle}
-        />
       </div>
       <div id="fun-mode" className="fun-mode text-center">
         <div className="text-white">
@@ -171,12 +161,15 @@ const Nav = ({ section, setSection, setTheme }) => {
             <EnterOutlined />
           </span>
         </div>
-        <Switch
-          checkedChildren="ON"
-          unCheckedChildren="OFF"
-          defaultChecked={false}
-          onChange={handleThemeChange}
-        />
+        <Tooltip title="Use the arrow keys to control the spaceship!">
+          <Switch
+            id="fun-mode-btn"
+            checkedChildren="ON"
+            unCheckedChildren="OFF"
+            defaultChecked={false}
+            onChange={handleThemeChange}
+          />
+        </Tooltip>
       </div>
     </>
   );

@@ -3,6 +3,7 @@ body {
   height: 100vh !important;
   height: calc(var(--vh, 1vh) * 100) !important;
   overflow: hidden !important;
+  background: #000 !important;
 }
 
 #background {

@@ -197,6 +197,14 @@ h2 {
   transform: rotate(0deg);
 }
 
+.rotated-right {
+  transform: rotate(90deg);
+}
+
+.rotated-left {
+  transform: rotate(270deg);
+}
+
 .pb-6 {
   padding-bottom: 6rem !important;
 }
