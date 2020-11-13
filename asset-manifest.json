@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.567a7123.chunk.css",
+    "main.js": "/static/js/main.87af2903.chunk.js",
+    "main.js.map": "/static/js/main.87af2903.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.291a5225.js",
+    "runtime-main.js.map": "/static/js/runtime-main.291a5225.js.map",
+    "static/css/2.c9bc975b.chunk.css": "/static/css/2.c9bc975b.chunk.css",
+    "static/js/2.870470fd.chunk.js": "/static/js/2.870470fd.chunk.js",
+    "static/js/2.870470fd.chunk.js.map": "/static/js/2.870470fd.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.c9bc975b.chunk.css.map": "/static/css/2.c9bc975b.chunk.css.map",
+    "static/css/main.567a7123.chunk.css.map": "/static/css/main.567a7123.chunk.css.map",
+    "static/js/2.870470fd.chunk.js.LICENSE.txt": "/static/js/2.870470fd.chunk.js.LICENSE.txt",
+    "static/media/about.bf766223.png": "/static/media/about.bf766223.png",
+    "static/media/account.7867f46b.png": "/static/media/account.7867f46b.png",
+    "static/media/admin-dashboard.b90ed553.png": "/static/media/admin-dashboard.b90ed553.png",
+    "static/media/admin-messages.72c7ecdb.png": "/static/media/admin-messages.72c7ecdb.png",
+    "static/media/admin-orders.ea22b498.png": "/static/media/admin-orders.ea22b498.png",
+    "static/media/admin-properties.5dbf5c92.png": "/static/media/admin-properties.5dbf5c92.png",
+    "static/media/checkout.aa477bdc.png": "/static/media/checkout.aa477bdc.png",
+    "static/media/contact.4ba37bf0.png": "/static/media/contact.4ba37bf0.png",
+    "static/media/contact.5a033c2a.png": "/static/media/contact.5a033c2a.png",
+    "static/media/Body.css": "/static/media/midground.15b73cfd.png",
+    "static/media/home.408e2cc7.png": "/static/media/home.408e2cc7.png",
+    "static/media/home.8b17ca6e.png": "/static/media/home.8b17ca6e.png",
+    "static/media/product.3b200567.png": "/static/media/product.3b200567.png",
+    "static/media/products.c79fddbc.png": "/static/media/products.c79fddbc.png",
+    "static/media/properties.e6c00a73.png": "/static/media/properties.e6c00a73.png",
+    "static/media/property.b0df3ae0.png": "/static/media/property.b0df3ae0.png",
+    "static/media/stack-overflow.7caf93b9.svg": "/static/media/stack-overflow.7caf93b9.svg",
+    "static/media/user-orders.7fa5a573.png": "/static/media/user-orders.7fa5a573.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.291a5225.js",
+    "static/css/2.c9bc975b.chunk.css",
+    "static/js/2.870470fd.chunk.js",
+    "static/css/main.567a7123.chunk.css",
+    "static/js/main.87af2903.chunk.js"
+  ]
+}
