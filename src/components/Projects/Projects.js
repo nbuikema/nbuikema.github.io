@@ -17,7 +17,7 @@ const Projects = ({ handleProjectClick }) => {
   };
 
   return (
-    <div className="content">
+    <div className="content pb-6">
       <h2>Projects</h2>
       <div className="row mx-4 mt-5">
         <div className="col-12 col-sm-6 mb-4">
