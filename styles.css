@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+  overflow-y: hidden;
+  min-height: -webkit-fill-available;
+}
+
+.ant-layout {
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+.ant-layout-content {
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+#background {
+  background: url('../../images/background/background.png') repeat 5% 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  opacity: 96% !important;
+
+  animation-name: animateStars;
+  animation-duration: 200s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#midground {
+  background: url('../../images/background/midground.png') repeat 20% 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  opacity: 96% !important;
+
+  animation-name: animateStars;
+  animation-duration: 150s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#foreground {
+  background: url('../../images/background/foreground.png') repeat 35% 35%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  opacity: 96% !important;
+
+  animation-name: animateStars;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
