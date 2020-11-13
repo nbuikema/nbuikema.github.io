@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Modal, Carousel } from 'antd';
+import { Modal } from 'antd';
 
 import CindysCreations from '../project-components/CindysCreations';
 import NJAHProperties from '../project-components/NJAHProperties';

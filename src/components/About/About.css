@@ -18,8 +18,8 @@ h2 {
 
 @media (max-width: 767px) {
   .content.about {
-    top: 40%;
-    transform: translateY(-40%);
+    top: 12vh;
+    transform: translateY(0);
     padding: 0 1rem;
   }
 

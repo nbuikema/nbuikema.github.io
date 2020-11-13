@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
+html,
+body {
+  height: 100vh !important;
+  max-height: 100vh !important;
+  min-height: 100vh !important;
+  overflow-y: hidden !important;
+}
+
 .ant-layout {
+  height: 100vh !important;
+  max-height: 100vh !important;
+  min-height: 100vh !important;
   background: #000 !important;
 }
 
@@ -9,11 +20,13 @@
   color: #fff;
   text-align: center;
   font-size: 2rem;
-  padding-top: 4rem;
   position: relative;
   top: 0;
   left: 378px !important;
   width: calc(100% - 378px);
+  height: 100vh !important;
+  max-height: 100vh !important;
+  min-height: 100vh !important;
   transition: left 0.8s;
 }
 
@@ -39,7 +52,7 @@ h2 {
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  opacity: 96%;
+  opacity: 96% !important;
 
   animation-name: animateStars;
   animation-duration: 200s;
@@ -55,7 +68,7 @@ h2 {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  opacity: 96%;
+  opacity: 96% !important;
 
   animation-name: animateStars;
   animation-duration: 150s;
@@ -71,7 +84,7 @@ h2 {
   width: 100vw;
   height: 100vh;
   z-index: 3;
-  opacity: 96%;
+  opacity: 96% !important;
 
   animation-name: animateStars;
   animation-duration: 100s;
