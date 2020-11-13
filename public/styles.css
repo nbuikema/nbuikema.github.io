@@ -1,22 +1,7 @@
 html,
 body {
   height: 100vh;
-  max-height: 100vh;
-  min-height: 100vh;
-  overflow-y: hidden;
-  min-height: -webkit-fill-available;
-}
-
-.ant-layout {
-  height: 100vh;
-  max-height: 100vh;
-  min-height: 100vh;
-}
-
-.ant-layout-content {
-  height: 100vh;
-  max-height: 100vh;
-  min-height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 #background {

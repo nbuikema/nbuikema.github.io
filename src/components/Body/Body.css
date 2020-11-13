@@ -1,20 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
-html,
-body {
-  height: 100vh !important;
-  max-height: 100vh !important;
-  min-height: 100vh !important;
-  overflow-y: hidden !important;
-  min-height: -webkit-fill-available !important;
-}
-
 .ant-layout {
-  height: 100vh !important;
-  max-height: 100vh !important;
-  min-height: 100vh !important;
   background: #000 !important;
-  min-height: -webkit-fill-available !important;
 }
 
 .ant-layout-content {
@@ -22,15 +9,12 @@ body {
   color: #fff;
   text-align: center;
   font-size: 2rem;
+  padding-top: 4rem;
   position: relative;
   top: 0;
   left: 378px !important;
   width: calc(100% - 378px);
-  height: 100vh !important;
-  max-height: 100vh !important;
-  min-height: 100vh !important;
   transition: left 0.8s;
-  min-height: -webkit-fill-available !important;
 }
 
 .push-body {
