@@ -1,6 +1,7 @@
 html,
 body {
-  height: 100% !important;
+  height: 100vh !important;
+  height: calc(var(--vh, 1vh) * 100) !important;
 }
 
 #background {
